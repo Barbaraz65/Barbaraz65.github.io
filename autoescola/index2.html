@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTOESCOLA-INSCRIÇÃO</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cdcdcd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: rgb(202, 209, 215);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 4, 8, 0.8);
+      text-align: center;
+    }
+
+    h1 {
+      color: #7ba7bd;
+    }
+
+    h3 {
+      color: #666;
+    }
+
+    label {
+      font-size: 16px;
+      display: block;
+      margin: 10px 0;
+    }
+
+    input[type="number"] {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100px;
+    }
+
+    input[type="button"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="button"]:hover {
+      background-color: #0056b3;
+    }
+
+    #id_resultado {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Autoescola-Inscrição</h1>
+      <h3>informe sua idade para verificar sua elegibilidade</h3>
+      <label for="id_idade"
+        >idade:
+        <input type="number" id="id_idade" />
+      </label>
+      <input type="button" value="verificar" onclick="verificar()" />
+    </div>
+    <p id="id_resultado"></p>
+    <script src="arquivo_scrpit.js"></script>
+  </body>
+</html>
