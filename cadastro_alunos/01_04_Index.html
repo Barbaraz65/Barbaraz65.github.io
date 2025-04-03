@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #869f88;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #bbd9bd;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      background-color: #c7c2d3;
+      padding: 20px;
+      margin-top: 20px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 8px;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(97, 89, 89, 0.1);
+    }
+
+    label {
+      color: uh;
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #869f88;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    fieldset {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #869f88;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="reset"] {
+      background-color: #f44336;
+    }
+
+    button:hover {
+      opacity: 2;
+      
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Cadrastro de Aluno</h1>
+    </header>
+
+    <form
+      action="https://webhook.site/e65c6644-0b1a-4ad2-a2b9-e80564f922bf"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="id_nome"
+        >Nome completo:
+        <input
+          type="text"
+          name="nome"
+          id="id_nome"
+          minlength="5"
+          maxlength="200"
+          placeholder="Informe seu nome completo"
+          required
+        />
+      </label>
+      <br />
+
+      <label for="id_senha">
+        senha:
+        <input
+          type="password"
+          name="senha"
+          id="id_senha"
+          placeholder="Informe sua senha"
+        />
+      </label>
+      <br />
+
+      <label for="id_email">
+        email:
+        <input
+          type="email"
+          name="email"
+          id="id_email"
+          placeholder="Informe seu email"
+        />
+      </label>
+      <br />
+
+      <label for="id_tel">
+        telefone:
+        <input
+          type="tel"
+          name="tel"
+          id="id_tel"
+          placeholder="(00) 00000-0000"
+        />
+      </label>
+      <br />
+
+      <label for="id_url">
+        site pessoal:
+        <input
+          type="url"
+          name="url"
+          id="id_url"
+          placeholder="Informe seu site pessoal"
+        />
+      </label>
+      <br />
+
+      <label for="id_mes"
+        >Mês de aniversário:
+        <input type="month" id="id_mes" name="mes" />
+      </label>
+      <br />
+
+      <label for="id_semana"
+        >Semana do ano:
+        <input type="week" id="id_semana" name="semana" />
+      </label>
+      <br />
+
+      <label for="id_hora"
+        >Hora preferida:
+        <input type="time" id="hora" name="hora" />
+      </label>
+      <br />
+
+      <label for="id_file">
+        Arquivo:
+        <input
+          type="file"
+          name="arquivo"
+          id="id_file"
+          accept=".jpg, .png, .pdf, .docx, .txt"
+          required
+        />
+      </label>
+      <br />
+
+      <label for="id_area"
+        >Sua biografia:
+        <br />
+        <textarea name="textao" id="id_area" required></textarea>
+      </label>
+      <br />
+
+      <label for="id_color">
+        Indique sua cor favorita:
+        <br />
+        <input type="color" name="color" id="id_color" placeholder="color" />
+      </label>
+
+      <fieldset>
+        <legend>Niveis de conhecimento</legend>
+
+        <label for="id_HTML"
+          >HTML:
+          <input
+            type="range"
+            name="HTML"
+            id="id_HTML"
+            min="0"
+            max="10"
+            step="1"
+            value="5"
+          />
+        </label>
+        <br />
+        <label for="id_JS"
+          >JS:
+          <input
+            type="range"
+            name="JS"
+            id="id_JS"
+            min="0"
+            max="10"
+            step="1"
+            value="5"
+          />
+        </label>
+        <br />
+        <label for="id_CSS"
+          >CSS:
+          <input
+            type="range"
+            name="CSS"
+            id="id_CSS"
+            min="0"
+            max="10"
+            step="1"
+            value="5"
+          />
+        </label>
+      </fieldset>
+
+      <div class="botoes">
+        <button type="submit">Enviar</button>
+        <button type="reset">Zerar</button>
+      </div>
+    </form>
+  </body>
+</html>
